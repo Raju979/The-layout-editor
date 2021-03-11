@@ -1,5 +1,3 @@
-Task 1: Create layout variants
-!['Added xml for landscape mode'](./landescape_mode.JPG)
-!['Design for tablet potrait'](./tablet_view.JPG)
-!['Design for tablet in landscape mode'](./tablet_view_landscape.JPG)
-!['Design for tablet in emulator'](./tablet_view_1.JPG)
+Task 2: Change the layout to LinearLayout
+!['Converted to linear layout'](./task2_linear_layout.JPG)
+!['Linear layout in emulator'](./task2_emulator.JPG)
