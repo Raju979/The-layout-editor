@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mShowCount = (TextView) findViewById(R.id.show_count);
+        countButton = (Button) findViewById(R.id.button_count);
+        zeroButton = findViewById(R.id.button_zero);
     }
 
     public void showToast(View view) {
@@ -32,19 +34,18 @@ public class MainActivity extends AppCompatActivity {
         if(mShowCount !=null){
             mShowCount.setText(Integer.toString(mCount));
         }
-//        if(mCount%2 !=0){
-            countButton = (Button) findViewById(R.id.button_count);
-//            View root = countButton.getRootView();
-        countButton.setBackgroundColor(getResources().getColor(R.color.black));
-        zeroButton = findViewById(R.id.button_zero);
-        zeroButton.setBackgroundColor(Color.WHITE);
-        ((Button)view).setBackgroundColor(Color.WHITE);
-
-//        }
+        if(mCount%2 !=0){
+        countButton.setBackgroundColor(getResources().getColor(R.color.teal_700));
+        zeroButton.setBackgroundColor(getResources().getColor(R.color.pink));
+        }
+        else{
+            countButton.setBackgroundColor(getResources().getColor(R.color.blue));
+        }
     }
 
     public void countZero(View view) {
         mCount = 0;
         mShowCount.setText(Integer.toString(mCount));
+        zeroButton.setBackgroundColor(getResources().getColor(R.color.grey));
     }
 }
